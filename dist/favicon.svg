@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Green Squircle Background -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="#006B3C"/>
+  
+  <!-- Gold Landmark Icon -->
+  <g fill="none" stroke="#C59B27" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Roof / Pediment -->
+    <path d="M112 210 L256 122 L400 210 Z" fill="#C59B27"/>
+    <!-- Top Beam under roof -->
+    <path d="M120 210 L392 210"/>
+    <!-- Base / Bottom Steps -->
+    <path d="M96 390 L416 390"/>
+    <path d="M120 354 L392 354"/>
+    <!-- Pillars -->
+    <path d="M152 226 L152 342"/>
+    <path d="M220 226 L220 342"/>
+    <path d="M292 226 L292 342"/>
+    <path d="M360 226 L360 342"/>
+  </g>
+</svg>

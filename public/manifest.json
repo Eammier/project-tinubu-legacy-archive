@@ -1,0 +1,9 @@
+{
+  "name": "Project Tinubu Legacy Archive",
+  "short_name": "PTLA",
+  "description": "Nigeria's centralized digital archive of verified Federal Government projects",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7F9FB",
+  "theme_color": "#006B3C"
+}
