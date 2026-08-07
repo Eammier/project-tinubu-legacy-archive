@@ -67,7 +67,7 @@ export function FadeIn({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, margin: "-50px" }}
+      viewport={{ once, amount: "some" }}
       variants={variants[direction]}
       transition={{ duration, delay, ease: [0.25, 0.4, 0.25, 1] }}
       className={cn(className)}
@@ -92,7 +92,7 @@ export function StaggerChildren({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: "some" }}
       variants={{
         hidden: {},
         visible: {

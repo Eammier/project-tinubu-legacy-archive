@@ -225,59 +225,31 @@ export function Header() {
               onClick={() => setMobileOpen(false)}
             />
 
-            {/* Drawer */}
+            {/* Top Dropdown Panel */}
             <motion.div
               id="mobile-drawer"
               ref={drawerRef}
               key="drawer"
-              initial={{ x: "100%" }}
-              animate={{ x: "0%" }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", stiffness: 320, damping: 32 }}
-              className="fixed top-0 right-0 bottom-0 z-50 w-72 max-w-[85vw] bg-white shadow-2xl flex flex-col lg:hidden"
+              initial={{ y: "-100%", opacity: 0 }}
+              animate={{ y: "0%", opacity: 1 }}
+              exit={{ y: "-100%", opacity: 0 }}
+              transition={{ type: "spring", stiffness: 340, damping: 34 }}
+              className="fixed top-[57px] left-0 right-0 z-50 bg-white shadow-2xl border-b border-gray-100 lg:hidden"
               role="dialog"
               aria-modal="true"
               aria-label="Mobile navigation"
             >
-              {/* Drawer header */}
-              <div className="flex items-center justify-between border-b border-gray-100 px-5 py-4">
-                <Link
-                  to="/"
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-3"
-                >
-                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#006B3C]">
-                    <Landmark className="h-5 w-5 text-[#C59B27]" />
-                  </div>
-                  <div>
-                    <p className="text-base font-black text-[#006B3C]">
-                      {APP_SHORT_NAME}
-                    </p>
-                    <p className="text-[9px] font-bold uppercase tracking-wider text-[#B38E2A]">
-                      Tinubu Legacy Archive
-                    </p>
-                  </div>
-                </Link>
-                <button
-                  onClick={() => setMobileOpen(false)}
-                  aria-label="Close menu"
-                  className="rounded-lg p-1.5 text-gray-500 hover:bg-gray-100 active:bg-gray-200 transition-colors"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </div>
-
               {/* Nav links */}
-              <nav className="flex-1 overflow-y-auto px-3 py-4" role="navigation">
+              <nav className="px-4 pt-3 pb-3" role="navigation">
                 <ul className="space-y-1">
                   {NAV_LINKS.map((item, i) => {
                     const isActive = pathname === item.href;
                     return (
                       <motion.li
                         key={item.href}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.05, duration: 0.2 }}
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: i * 0.055, duration: 0.22 }}
                       >
                         <Link
                           to={item.href}
@@ -300,8 +272,8 @@ export function Header() {
                 </ul>
               </nav>
 
-              {/* Drawer CTA */}
-              <div className="border-t border-gray-100 p-4">
+              {/* CTA */}
+              <div className="border-t border-gray-100 px-4 py-4">
                 <Link
                   to="/projects"
                   onClick={() => setMobileOpen(false)}
