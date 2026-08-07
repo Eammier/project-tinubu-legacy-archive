@@ -71,13 +71,16 @@ export const NIGERIAN_STATES = [
 ] as const;
 
 export const STATS = {
-  totalProjects: 4827,
+  // Verified Projects — documented FGN interventions (2023–2030)
+  totalProjects: 2_064,
   statesCovered: 37,
   lgasCovered: 774,
-  totalBudget: 2_450_000_000_000,
-  completedProjects: 1842,
-  ongoingProjects: 2456,
-  beneficiaries: 48_500_000,
+  // Allocated Capital — ₦54.93 Trillion budgeted across all sectors
+  totalBudget: 54_930_000_000_000,
+  // Emergency intervention projects prioritised & fast-tracked
+  completedProjects: 260,
+  ongoingProjects: 1_804,
+  beneficiaries: 180_000_000,
 } as const;
 
 export const TIMELINE_YEARS = [2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030] as const;

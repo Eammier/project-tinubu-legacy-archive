@@ -30,18 +30,18 @@ interface StatsSectionProps {
 
 export function StatsSection({ stats }: StatsSectionProps) {
   const data = stats || {
-    totalProjects: 4827,
+    totalProjects: 2_064,
     statesCovered: 37,
     lgasCovered: 774,
-    totalBudget: 28450000000000,
-    completedProjects: 1542,
-    ongoingProjects: 2841,
-    beneficiaries: 180000000,
+    totalBudget: 54_930_000_000_000,
+    completedProjects: 260,
+    ongoingProjects: 1_804,
+    beneficiaries: 180_000_000,
   };
 
   const statItems = [
     {
-      label: "Total Projects",
+      label: "Verified Projects",
       value: data.totalProjects,
       icon: FolderOpen,
       color: "text-primary dark:text-emerald-400",
@@ -65,7 +65,7 @@ export function StatsSection({ stats }: StatsSectionProps) {
       glow: "group-hover:shadow-purple-500/10",
     },
     {
-      label: "Total Budget",
+      label: "Allocated Capital",
       value: data.totalBudget,
       icon: Wallet,
       color: "text-amber-600 dark:text-amber-400",
@@ -74,7 +74,7 @@ export function StatsSection({ stats }: StatsSectionProps) {
       glow: "group-hover:shadow-amber-500/10",
     },
     {
-      label: "Completed",
+      label: "Emergency Schemes",
       value: data.completedProjects,
       icon: CheckCircle2,
       color: "text-emerald-600 dark:text-emerald-400",
